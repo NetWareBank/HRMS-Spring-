@@ -20,6 +20,12 @@
     </definition>
     
     
+     <definition name="menu_pop.definition" template="/WEB-INF/jsp/menu_popitup.jsp">
+        <put-attribute name="title" value=""/>
+        
+        <put-attribute name="body" value=""/>
+   </definition>
+    
      <definition name="pop.definition" template="/WEB-INF/jsp/popup.jsp">
         <put-attribute name="title" value=""/>
         
@@ -67,9 +73,9 @@
   <!-- END OF PRODUCT -->
    <!-- BARCODE -->
   
-  <definition name="bargen" extends="base.definition">
+  <definition name="empMenu" extends="menu_pop.definition">
         <put-attribute name="title" value="msg"  />
-        <put-attribute name="body" value="/WEB-INF/jsp/bargen.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/employee_menu.jsp" />
     </definition>
   
   <!-- BASIC INDEX DEF -->
@@ -96,5 +102,10 @@
         <put-attribute name="title" value="msg"  />
         <put-attribute name="body" value="/WEB-INF/jsp/alljobsHr.jsp" />
     </definition>
+ 
+ 
+
+ 
+ 
  
 </tiles-definitions>

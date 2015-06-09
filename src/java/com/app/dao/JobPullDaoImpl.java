@@ -35,6 +35,8 @@ public class JobPullDaoImpl implements JobPullDao {
 
     @Autowired
     private JdbcTemplate jdbc;
+     @Autowired
+    private Applic applic;
 
     /*
      THIS METHOD IS USE TO DISPLAY ALL THE ACTIVE JOB POSTED IN JOB PULL
@@ -123,7 +125,7 @@ public class JobPullDaoImpl implements JobPullDao {
             public ArrayList<Applic> extractData(ResultSet rs) throws SQLException, DataAccessException {
                 ArrayList<Applic> jobs = new ArrayList<Applic>();
                 while (rs.next()) {
-                    Applic job = new Applic();
+                    Applic job = applic;
                     job.setAid(Integer.parseInt(rs.getString("appid")));
                     job.setName(rs.getString("name"));
                     job.setEmail(rs.getString("email"));

@@ -28,6 +28,7 @@ public class JobServiceImpl implements JobService{
 
     @Autowired
     private JobPullDao jobdao ;
+   
     public ArrayList<JobPullBean> getAlljobs() {
         ArrayList<JobPullBean> jobs = jobdao.getAllJob();
         return jobs;

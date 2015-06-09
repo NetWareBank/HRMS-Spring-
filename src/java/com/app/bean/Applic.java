@@ -5,12 +5,15 @@
  */
 package com.app.bean;
 
+import org.springframework.stereotype.Component;
+
 /**
  *
  * @author Swarnendu
  */
+@Component("appli")
 public class Applic {
-   private int aid;
+   private int aid; 
     private String name;
     private String email;
     private String totex;

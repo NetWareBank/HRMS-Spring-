@@ -332,7 +332,10 @@
                                     <a href="#">Second Level Item</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-sitemap fa-fw"></i><b>HR-Module</b> <span class="fa arrow"></span></a>
+                                    <a href="#" style="color: #f40f0f"><i class="fa fa-sitemap fa-fw"></i><b>HR-Module</b> <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>Recrument-Module<span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
                                             <a href="hraddJob.nw"onclick="return popitup('hraddJob.nw')">JOB-POST</a>
@@ -343,15 +346,63 @@
                                         <li>
                                             <a href="candiList.nw">Candidates-For-Job</a>
                                         </li>
+                                    </ul>
+                                       
+                                        <li>
+                                        <a href="#" style="color: #00d6b2"><i class="fa fa-sitemap fa-fw"></i>Employee-Module<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            
+                                        <li>
+                                            <a href="#">USER</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onclick="return popmenu('empMenu.nw' )">EMPLOYEE</a>
+                                        </li>
+                                                                        
+                                        <li>
+                                            <a href="#">DEPARTMENT</a>
+                                        </li>
+                                        
+                                        
+                                        
+                                        </li>
+                                    </ul>
+                                        </li>
+                                        
+                                         <li>
+                                        <a href="#" style="color: orchid"><i class="fa fa-sitemap fa-fw"></i>SOCITY-Module<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            
+                                         <li>
+                                            <a href="#">SOCITY</a>
+                                        </li>
+                                            
+                                        <li>
+                                            <a href="#">SYSTEM INSTALATION</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#">SYSTEM-SUPPORT</a>
+                                        </li>
+                                        
+                                         <li>
+                                            <a href="#">DIST/BLOCK</a>
+                                        </li>
+                                        
+                                        </li>
+                                    </ul>
+                                         </li>
+                                        
                                         <li>
                                             <a href="#">Third Level Item</a>
                                         </li>
                                     
-                                       
-                                     
+                                    </ul>
                                     <!-- /.nav-third-level -->
                                 </li>
-                            </ul>
+                           
                             <!-- /.nav-second-level -->
                         </li>
                                       <!---    MY CODE MENU -->
@@ -425,6 +476,13 @@
 <!--
 function popitup(url) {
 	newwindow=window.open(url,'name','height=880,width=750');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+
+function popmenu(url) {
+	newwindow=window.open(url,'name','height=200,width=900');
 	if (window.focus) {newwindow.focus()}
 	return false;
 }

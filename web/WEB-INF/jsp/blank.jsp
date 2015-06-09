@@ -396,7 +396,10 @@
                                          </li>
                                         
                                         <li>
-                                            <a href="#">Third Level Item</a>
+                                            <a href="hraddDist.nw">Add District</a>
+                                        </li>
+                                         <li>
+                                            <a href="hraddBlock.nw">Add Block</a>
                                         </li>
                                     
                                     </ul>

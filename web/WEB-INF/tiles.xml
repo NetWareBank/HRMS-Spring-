@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <!-- This is Base lay out def all tiles def extend this def -->
+    <definition name="base.definition" template="/WEB-INF/jsp/blank.jsp">
+        <put-attribute name="title" value=""/>
+        
+        <put-attribute name="body" value=""/>
+       
+    </definition>
+    
+     <definition name="home.definition" template="/WEB-INF/jsp/basic2.jsp">
+        <put-attribute name="title" value=""/>
+              
+        <put-attribute name="body" value=""/>
+       
+    </definition>
+    
+    
+     <definition name="pop.definition" template="/WEB-INF/jsp/popup.jsp">
+        <put-attribute name="title" value=""/>
+        
+        <put-attribute name="body" value=""/>
+   </definition>
+    <!-- Class Module -->
+    
+     <definition name="allJobs" extends="home.definition">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/jsp/allJobs.jsp"/>
+    </definition>
+ 
+
+ 
+  <definition name="allCandi" extends="base.definition">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/jsp/AllCandi2.jsp"/>
+    </definition>
+ 
+ 
+  <!-- End OF CLASS MODULE -->
+  
+  <!-- STUDENT MASTER MODULE -->
+ 
+  <definition name="filljob" extends="pop.definition">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/jsp/filljob.jsp"/>
+    </definition>
+    
+     <!-- PRODUCT -->
+    <definition name="postjob" extends="base.definition">
+        <put-attribute name="title" value="index"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/hrpostjob.jsp"/>
+    </definition>
+   
+  <definition name="addproduct" extends="base.definition">
+        <put-attribute name="title" value="msg"  />
+        <put-attribute name="body" value="/WEB-INF/jsp/addproduct.jsp" />
+    </definition>
+    
+    <definition name="editp" extends="base.definition">
+        <put-attribute name="title" value="msg"  />
+        <put-attribute name="body" value="/WEB-INF/jsp/editp.jsp" />
+    </definition>
+  <!-- END OF PRODUCT -->
+   <!-- BARCODE -->
+  
+  <definition name="bargen" extends="base.definition">
+        <put-attribute name="title" value="msg"  />
+        <put-attribute name="body" value="/WEB-INF/jsp/bargen.jsp" />
+    </definition>
+  
+  <!-- BASIC INDEX DEF -->
+  <definition name="index" extends="base.definition">
+        <put-attribute name="titallCandile" value="index"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/index.jsp"/>
+    </definition>
+ <!-- END OF INDEX-->
+ 
+ 
+    
+ <definition name="login" extends="pop.definition">
+        <put-attribute name="title" value="index"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/login.jsp"/>
+    </definition>
+  
+ 
+ <definition name="newT" extends="base.definition">
+        <put-attribute name="title" value="msg"  />
+        <put-attribute name="body" value="/WEB-INF/jsp/newT.jsp" />
+    </definition>
+    
+    <definition name="hrjobLst" extends="base.definition">
+        <put-attribute name="title" value="msg"  />
+        <put-attribute name="body" value="/WEB-INF/jsp/alljobsHr.jsp" />
+    </definition>
+ 
+</tiles-definitions>

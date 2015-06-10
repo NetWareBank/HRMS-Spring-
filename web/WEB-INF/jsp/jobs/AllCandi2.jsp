@@ -5,6 +5,7 @@
 --%>
 
 <%@taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<div class="well">
 <center>
 <div class="col-lg-12">
     <div class="panel panel-default">
@@ -51,7 +52,7 @@
     <!-- /.panel -->
 </div>
 </center>
-
+</div>
 
 
 <script>

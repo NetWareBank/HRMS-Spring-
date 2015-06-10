@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <link rel="icon"  href="<c:url value="/resources/images/tiles.png"/>"> 
     <title>NetWare</title>
 
     <!-- Bootstrap Core CSS -->
@@ -357,7 +357,7 @@
                                             <a href="#">USER</a>
                                         </li>
                                         <li>
-                                            <a href="#" onclick="return popmenu('empMenu.nw' )">EMPLOYEE</a>
+                                            <a href="empMenu.nw" >EMPLOYEE</a>
                                         </li>
                                                                         
                                         <li>
@@ -371,12 +371,12 @@
                                         </li>
                                         
                                          <li>
-                                        <a href="#" style="color: orchid"><i class="fa fa-sitemap fa-fw"></i>SOCITY-Module<span class="fa arrow"></span></a>
+                                        <a href="#" style="color: orchid"><i class="fa fa-sitemap fa-fw"></i>SOCIETY-Module<span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
                                             
                                          <li>
-                                            <a href="#">SOCITY</a>
+                                            <a href="#">SOCIETY</a>
                                         </li>
                                             
                                         <li>
@@ -388,7 +388,7 @@
                                         </li>
                                         
                                          <li>
-                                            <a href="#">DIST/BLOCK</a>
+                                            <a href="dBMenu.nw" >DIST/BLOCK</a>
                                         </li>
                                         
                                         </li>
@@ -449,7 +449,38 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header" style="color: #04B173">NetWare HRMS</h1>
+                        <h2 class="page-header" style="color: #04B173">NetWare HRMS</h2> 
+                        <div class="nav navbar-top-links navbar-right">
+                            <form name="Tick" class="Blockquotes">
+<input type="text" class="btn btn-success" size="11" name="Clock">
+</form>
+</div>
+<script>
+<!--
+
+function show(){
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var seconds=Digital.getSeconds()
+var dn="AM"
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0)
+hours=12
+if (minutes<=9)
+minutes="0"+minutes
+if (seconds<=9)
+seconds="0"+seconds
+document.Tick.Clock.value=hours+":"+minutes+":"
++seconds+" "+dn
+setTimeout("show()",1000)
+}
+show()
+//-->
+</script>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
@@ -478,7 +509,7 @@
      <script language="javascript" type="text/javascript">
 <!--
 function popitup(url) {
-	newwindow=window.open(url,'name','height=880,width=750');
+	newwindow=window.open(url,'name','height=500,width=750');
 	if (window.focus) {newwindow.focus()}
 	return false;
 }

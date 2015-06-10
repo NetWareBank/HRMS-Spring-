@@ -5,6 +5,7 @@
 --%>
 <%@taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <center>
+     <p style="color: darkviolet">MENU FOR EMPLOYEE</p>
     <div class="panel-body">
         <div class="table-responsive">
             <table >
@@ -21,13 +22,3 @@
         </div>
 </center>
 
-<script language="javascript" type="text/javascript">
-<!--
-function popitup(url) {
-	newwindow=window.open(url,'name','height=3080,width=750');
-	if (window.focus) {newwindow.focus()}
-	return false;
-}
-
-// -->
-</script>

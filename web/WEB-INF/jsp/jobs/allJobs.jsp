@@ -5,6 +5,7 @@
 --%>
 <%@taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<div class="well">
  <center>
 <div style=" width: 500px; height: 500px; animation: ease-in; ">
    
@@ -39,4 +40,4 @@ function popitup(url) {
 // -->
 </script>
 </div>
-</center>
+ </center></div>

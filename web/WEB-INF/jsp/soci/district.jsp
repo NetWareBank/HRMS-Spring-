@@ -5,5 +5,5 @@
         <input type="text" required="required" placeholder="ENTER DISTRICT NAME" name="dist_name"/>
         <input type="submit" value=" SAVE"/>
     </f:form>
-        <p>${msg}</p>
+        <p style="color: #04B173"><b>${msg}</b></p>
 </center>

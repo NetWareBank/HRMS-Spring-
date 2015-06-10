@@ -25,6 +25,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class SocityController {
  @Autowired
  private SocityService socityservice;
+ 
+ 
+ 
+ 
+         
+  @RequestMapping(value ="/dBMenu", method = RequestMethod.GET)   
+  public String dbmenu(Model m){
+      
+      return "dBMenu";
+  }
+  
+  
   @RequestMapping(value = "/hraddDist",method = RequestMethod.GET)
     public String hrAddDist(Model m){
         
@@ -36,7 +48,7 @@ public class SocityController {
        socityservice.addDist(db);
        
        
-        m.addAttribute("DISTRICT ADDED", "msg");
+        m.addAttribute( "msg","DISTRICT ADDED");
         return "postdist2";
         
     }
@@ -55,7 +67,7 @@ public class SocityController {
         ArrayList<DistrictBean> lst= socityservice.getAllDists();
         m.addAttribute("lst", lst);
        
-        m.addAttribute("msg","DISTRICT ADDED");
+        m.addAttribute("msg","BLOCK ADDED");
         return "postblock";
         
     }

@@ -125,7 +125,7 @@ public class JobPullDaoImpl implements JobPullDao {
             public ArrayList<Applic> extractData(ResultSet rs) throws SQLException, DataAccessException {
                 ArrayList<Applic> jobs = new ArrayList<Applic>();
                 while (rs.next()) {
-                    Applic job = applic;
+                    Applic job = new Applic();
                     job.setAid(Integer.parseInt(rs.getString("appid")));
                     job.setName(rs.getString("name"));
                     job.setEmail(rs.getString("email"));

@@ -5,14 +5,14 @@
 
 <tiles-definitions>
     <!-- This is Base lay out def all tiles def extend this def -->
-    <definition name="base.definition" template="/WEB-INF/jsp/blank.jsp">
+    <definition name="base.definition" template="/WEB-INF/jsp/layouts/blank.jsp">
         <put-attribute name="title" value=""/>
         
         <put-attribute name="body" value=""/>
        
     </definition>
     
-     <definition name="home.definition" template="/WEB-INF/jsp/basic2.jsp">
+     <definition name="home.definition" template="/WEB-INF/jsp/layouts/basic2.jsp">
         <put-attribute name="title" value=""/>
               
         <put-attribute name="body" value=""/>
@@ -20,7 +20,7 @@
     </definition>
     
     
-     <definition name="menu_pop.definition" template="/WEB-INF/jsp/menu_popitup.jsp">
+     <definition name="menu_pop.definition" template="/WEB-INF/jsp/layouts/menu_popitup.jsp">
         <put-attribute name="title" value=""/>
         
         <put-attribute name="body" value=""/>
@@ -35,16 +35,35 @@
     
      <definition name="allJobs" extends="home.definition">
         <put-attribute name="title" value=""/>
-        <put-attribute name="body" value="/WEB-INF/jsp/allJobs.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/jobs/allJobs.jsp"/>
     </definition>
  
 
  
-  <definition name="allCandi" extends="base.definition">
+
+     <definition name="allCandi" extends="base.definition">
         <put-attribute name="title" value=""/>
-        <put-attribute name="body" value="/WEB-INF/jsp/AllCandi2.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/jobs/AllCandi2.jsp"/>
+    </definition>
+    
+    <!-- SOCITY MODULE__DISTRCT -->
+    
+     <definition name="postdist" extends="pop.definition">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/jsp/soci/district.jsp"/>
+    </definition>
+    
+     <definition name="postdist2" extends="base.definition">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/jsp/soci/district.jsp"/>
     </definition>
  
+ 
+ 
+   <definition name="postblock" extends="pop.definition">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="body" value="/WEB-INF/jsp/soci/block.jsp"/>
+    </definition>
  
   <!-- End OF CLASS MODULE -->
   
@@ -52,13 +71,13 @@
  
   <definition name="filljob" extends="pop.definition">
         <put-attribute name="title" value=""/>
-        <put-attribute name="body" value="/WEB-INF/jsp/filljob.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/jobs/filljob.jsp"/>
     </definition>
     
      <!-- PRODUCT -->
     <definition name="postjob" extends="base.definition">
         <put-attribute name="title" value="index"/>
-        <put-attribute name="body" value="/WEB-INF/jsp/hrpostjob.jsp"/>
+        <put-attribute name="body" value="/WEB-INF/jsp/jobs/hrpostjob.jsp"/>
     </definition>
    
   <definition name="addproduct" extends="base.definition">
@@ -73,10 +92,17 @@
   <!-- END OF PRODUCT -->
    <!-- BARCODE -->
   
-  <definition name="empMenu" extends="menu_pop.definition">
+  <definition name="empMenu" extends="base.definition">
         <put-attribute name="title" value="msg"  />
-        <put-attribute name="body" value="/WEB-INF/jsp/employee_menu.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/emp/employee_menu.jsp" />
     </definition>
+    
+    
+     <definition name="dBMenu" extends="base.definition">
+        <put-attribute name="title" value="msg"  />
+        <put-attribute name="body" value="/WEB-INF/jsp/soci/dist_block_Menu.jsp" />
+    </definition>
+  
   
   <!-- BASIC INDEX DEF -->
   <definition name="index" extends="base.definition">
@@ -92,6 +118,10 @@
         <put-attribute name="body" value="/WEB-INF/jsp/login.jsp"/>
     </definition>
   
+  
+  
+  
+  
  
  <definition name="newT" extends="base.definition">
         <put-attribute name="title" value="msg"  />
@@ -100,12 +130,12 @@
     
     <definition name="hrjobLst" extends="base.definition">
         <put-attribute name="title" value="msg"  />
-        <put-attribute name="body" value="/WEB-INF/jsp/alljobsHr.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/jobs/alljobsHr.jsp" />
     </definition>
  
- 
 
- 
- 
+
+
+
  
 </tiles-definitions>

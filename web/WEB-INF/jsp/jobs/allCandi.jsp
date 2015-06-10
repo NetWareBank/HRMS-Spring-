@@ -6,6 +6,8 @@
 <script src="<c:url value="/resources/GRID/js/jquery-min.js"/>" type="text/javascript"></script>
 <script src="<c:url value="/resources/GRID/js/jquery.dataTables.js"/>" type="text/javascript"></script>
 
+
+<div class="well">
 <h4> CANDI </h4>
 <center>
    
@@ -30,6 +32,9 @@
     </table>
 </div>
 </center>
+
+</div>
+
 <script language="javascript" type="text/javascript">
 <!--
     function popitup(url) {
